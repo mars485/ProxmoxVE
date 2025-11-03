@@ -41,7 +41,7 @@ function update_script() {
     fi
   fi
 
-  NODE_VERSION="22" NODE_MODULE="yarn" setup_nodejs
+  NODE_VERSION="20" NODE_MODULE="yarn" setup_nodejs
   export NODE_OPTIONS="--openssl-legacy-provider"
 
   RELEASE=$(curl -fsSL https://api.github.com/repos/NginxProxyManager/nginx-proxy-manager/releases/latest |
